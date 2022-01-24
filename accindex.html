@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Registration</title>
+
+    <link rel="icon" href="images/logo.png" type="image/icon type">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="accstyle.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="util.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="accapp.js"></script>
+</head>
+
+<body>
+    <div class="nav-div">
+            <div class="nav-logo">
+                <img class="logo-img" src="images/logo2.png" onclick="location.href='accindex.html'">
+            </div>
+    </div>
+    <div class="page-wrapper p-t-45 p-b-50">
+        <div class="wrapper wrapper--w790">
+            <div class="card card-5">
+                <div class="card-body">
+                    <form method="post" action="accindex.php">
+                        <div class="form-row m-b-55">
+                            <span class="login100-form-title">
+                                Create Account
+                            </span>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Name</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" id="name" type="text" name="name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Username</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" id="uname" type="text" name="uname">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Email</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" id="email" type="text" name="email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Phone</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" id="phone" type="phone" name="phone">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Password</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" id="pass" type="password" name="pass">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-login100-form-btn">
+                            <button class="btn btn--radius-2 btn--red"  name="submit_form" type="submit" onclick="validate(); ">Create</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
